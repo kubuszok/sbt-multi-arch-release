@@ -25,7 +25,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
       - uses: coursier/setup-action@v3.0.0
         with:
-          jvm: "temurin:1.17.0.15"
+          jvm: "temurin:1.25.0.1"
           apps: sbt
       - name: Download static curl libraries
         run: |
